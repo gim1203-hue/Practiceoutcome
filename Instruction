@@ -14,3 +14,4 @@ pull request= PR
 compare between branches
 perform/list/save/apply stash
 withdraw staged chages
+revert commit

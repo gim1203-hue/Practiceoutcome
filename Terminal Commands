@@ -97,3 +97,5 @@
 5- git status
 6- git add .  (staged)green
 7- git reset file name (to reset only 1 file)
+
+--------how to revert commit------
