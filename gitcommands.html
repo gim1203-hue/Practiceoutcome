@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Here is a larger Git command quick reference list covering the major Git commands used by software engineers. (Git has many internal commands, but these are the important ones developers encounter.)
+
+Git Command Quick Reference
+
+Git Setup & Configuration
+
+* git --version — Check Git version.
+* git config — Configure Git settings.
+* git config --list — Show all settings.
+* git config --global user.name "Name" — Set username.
+* git config --global user.email "email" — Set email.
+* git help — Open Git help.
+* git help <command> — Get help for a command.
+
+⸻
+
+Create & Copy Repositories
+
+* git init — Create a new repository.
+* git clone <url> — Copy a repository.
+* git clone --branch <name> <url> — Clone a specific branch.
+
+⸻
+
+Check Repository Information
+
+* git status — Show current changes.
+* git diff — Show unstaged changes.
+* git diff --staged — Show staged changes.
+* git log — Show commit history.
+* git log --oneline — Short commit history.
+* git log --graph — Show branch history.
+* git show — Show commit details.
+* git blame <file> — Show who changed each line.
+* git reflog — Show previous Git actions.
+
+⸻
+
+Add & Save Changes
+
+* git add . — Add all changes.
+* git add <file> — Add one file.
+* git add -A — Add all changes including deletions.
+* git commit -m "message" — Save changes.
+* git commit -am "message" — Add and commit tracked files.
+* git commit --amend — Modify last commit.
+
+⸻
+
+Upload & Download Changes
+
+* git remote -v — Show remote connection.
+* git remote add origin <url> — Connect GitHub repository.
+* git remote remove origin — Remove remote.
+* git fetch — Download updates only.
+* git pull — Download and merge updates.
+* git push — Upload changes.
+* git push origin <branch> — Push a branch.
+* git push -u origin <branch> — Push and remember branch.
+* git push --force — Force upload changes.
+* git push --tags — Upload tags.
+
+⸻
+
+Branch Commands
+
+* git branch — List branches.
+* git branch <name> — Create branch.
+* git branch -a — Show all branches.
+* git branch -d <name> — Delete branch.
+* git branch -D <name> — Force delete branch.
+* git switch <branch> — Change branch.
+* git switch -c <branch> — Create and switch branch.
+* git checkout <branch> — Switch branch (older method).
+* git checkout -b <branch> — Create branch (older method).
+
+⸻
+
+Merge & Combine Code
+
+* git merge <branch> — Combine branches.
+* git rebase <branch> — Move commits onto another branch.
+* git cherry-pick <commit> — Copy a specific commit.
+* git merge --abort — Cancel merge.
+* git rebase --abort — Cancel rebase.
+
+⸻
+
+Undo & Fix Mistakes
+
+* git restore <file> — Undo file changes.
+* git restore --staged <file> — Remove from staging.
+* git reset — Move HEAD pointer.
+* git reset --soft HEAD~1 — Undo commit but keep files.
+* git reset --mixed HEAD~1 — Undo commit and unstage.
+* git reset --hard HEAD — Delete local changes.
+* git revert <commit> — Safely undo commit.
+
+⸻
+
+Stash (Temporary Save)
+
+* git stash — Temporarily save work.
+* git stash list — Show saved stashes.
+* git stash pop — Restore saved work.
+* git stash apply — Apply stash.
+* git stash drop — Delete stash.
+* git stash clear — Delete all stashes.
+
+⸻
+
+File Management
+
+* git rm <file> — Remove file.
+* git mv <old> <new> — Rename/move file.
+* git clean -fd — Remove untracked files.
+
+⸻
+
+Tags & Releases
+
+* git tag — List tags.
+* git tag <name> — Create a tag.
+* git tag -a <name> -m "message" — Create release tag.
+* git push --tags — Upload tags.
+* git describe — Show version information.
+
+⸻
+
+Searching & Debugging
+
+* git grep <text> — Search code.
+* git bisect start — Start bug search.
+* git bisect good — Mark working version.
+* git bisect bad — Mark broken version.
+* git bisect reset — Finish debugging search.
+
+⸻
+
+Submodules
+
+* git submodule add <url> — Add another repository.
+* git submodule update — Update submodules.
+* git submodule init — Initialize submodules.
+
+⸻
+
+Advanced Repository Commands
+
+* git archive — Create project archive.
+* git bundle — Package repository.
+* git worktree add — Create another working folder.
+* git worktree list — List worktrees.
+* git worktree remove — Remove worktree.
+* git gc — Clean repository.
+* git fsck — Check repository errors.
+* git prune — Remove unused objects.
+* git rerere — Remember conflict resolutions.
+* git notes — Add notes to commits.
+* git replace — Replace Git objects.
+
+⸻
+
+Patch Commands
+
+* git diff > file.patch — Create patch file.
+* git apply file.patch — Apply patch.
+* git format-patch — Create email patches.
+* git am — Apply email patches.
+
+⸻
+
+Everyday Software Engineer Workflow
+
+Most days you will use:
+
+1. git pull
+2. git status
+3. git add .
+4. git commit -m "message"
+5. git push
+6. git branch
+7. git switch -c feature-name
+8. git merge
+9. git diff
+10. git log --oneline
+
+This is the full practical Git reference a software engineer would keep nearby while working in Visual Studio Code, GitHub, and team projects.
+    
+</body>
+</html>
