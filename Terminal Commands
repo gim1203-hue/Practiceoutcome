@@ -1,0 +1,65 @@
+------------------------------------------------
+    *----------(steps to create a new repository and link it to local project)--------
+1- After creating a new folder and a file in (index.html)
+2- Press (shift+1 enter). make sure to save file in vscodes.
+3- then go to github and create a new repository and
+4- copy the url of the repository and paste it in the second command in the terminal of vscode.
+----------------------------------------------------------
+        *----------( to clone code from github to local machine)--------
+ 1- copy url from github (contyro+c)
+ 2- open new window in vscodes
+ 3- press (control+shift+p)
+ 4- write (Git: Clone)
+5- paste url (contro+v) press enter
+6- select folder where you want to save the projest
+                    OR
+1- copy url of repository from github (control+c)
+2- open a new folder in VScode
+3- type git clone then press (contro+v) to paste url in the terminal.
+    
+    *=============(terminal command for vscode)
+    1- git init
+    2- git remote add origin <copy paste url from github>
+        3- git add .
+        4- git commit -m "initial commit"
+        5- git push -u origin master
+        -------(to update latest changes)-------
+        1- git add .
+        2- git commit -m "update my html file"
+        3- git push
+
+         ----(Git fetch)---------------------
+        *after creating a file and new branch in git hub*
+        *open viisual sdudio code*
+        1- git fetch origin (to fech data from github)
+        ----------------------------------------------------
+
+        ------------(Git pull)------------
+        * combination of fetch and merging*
+        1- git pull origin master (to pull from github)
+        2- git checkout branch name 
+        3- git merge branch name main/master
+        4- git push
+        
+        ------------(Git Push)-------------------
+        1- git push origin <branch-name> (to push the branch to github)
+
+        -----( (mergeing) branches to the master -----------)
+        1- git branch (to see which brach is active)
+        2- git checkout branch name (to select which brach to merge to)
+        3- git merege branch name (which branch you want merged)
+        4- git push 
+        
+        -------(to update latest changes)-------
+        1- git add .
+        2- git commit -m "update my html file"
+        3- git push
+
+        git fetch origin
+        git pull
+        git checkout branch name
+        git merge branch name or git rebase branch name
+        git add .
+        git commit -m "update file name"
+        git push
+        git status
