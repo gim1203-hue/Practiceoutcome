@@ -81,6 +81,11 @@
 --------compare brances to see the difference--------
 1- git diff branch1..branch2
 
---------how to perform stash-------
+--------how to perform stash and list/save and apply stash------
 1- git stash save "added paragraph"
 2- git stash save "content in file name"
+3- git stash list
+4- git stash apply
+5- git stash save again
+6- git stash apply
+

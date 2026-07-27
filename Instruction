@@ -12,4 +12,4 @@ updating
 history
 pull request= PR
 compare between branches
-perform stash
+perform/list/save/apply stash
