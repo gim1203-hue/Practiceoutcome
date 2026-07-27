@@ -1,1 +1,222 @@
+Here are the Git commands most developers use every day, in simple words:
 
+* git init — Start a new Git project.
+* git clone — Copy a project from GitHub.
+* git status — Check what changed.
+* git add . — Add all changes.
+* git add <file> — Add one file.
+* git commit -m "message" — Save your changes.
+* git push — Upload changes to GitHub.
+* git pull — Download the latest changes.
+* git fetch — Check for updates.
+* git branch — Show all branches.
+* git branch <name> — Create a new branch.
+* git switch <name> — Switch to another branch.
+* git switch -c <name> — Create and switch to a new branch.
+* git merge <branch> — Combine two branches.
+* git rebase <branch> — Move your changes onto the latest branch.
+* git log — View commit history.
+* git log --oneline — View short commit history.
+* git diff — See what changed.
+* git stash — Save unfinished work temporarily.
+* git stash pop — Restore unfinished work.
+* git restore <file> — Undo changes to a file.
+* git rm <file> — Delete a tracked file.
+* git mv <old> <new> — Rename or move a file.
+* git remote -v — Show GitHub connection.
+* git remote add origin <URL> — Connect to GitHub.
+* git tag <name> — Create a version tag.
+* git reset --soft HEAD~1 — Undo the last commit but keep the changes.
+* git reset --hard HEAD — Discard all uncommitted changes.
+* git checkout <branch> — Switch branches (older command still widely used).
+1-everday use git commands
+	•	git fetch — get updates without merging
+	•	git log — view commit history
+	•	git diff — see line-by-line changes
+
+Undoing things
+
+	•	git reset <file> — unstage a file
+	•	git checkout -- <file> — discard local changes to a file
+	•	git revert <commit> — undo a commit by creating a new one
+
+VS Code-specific tips
+
+	•	Source Control panel (Ctrl+Shift+G / Cmd+Shift+G) does staging, committing, and pushing without touching the terminal
+	•	The GitLens extension is worth installing — adds blame annotations, history, and comparisons right in the editor
+	•	VS Code shows inline diff gutters (green/red bars) for uncommitted changes automatically
+
+Want me to put this together as a quick-reference doc or cheat sheet for the new hires?
+----------------------------------------------------
+Command
+
+What it does
+
+When you use it
+
+git init
+
+Creates a new Git repository
+
+Start tracking a new project
+
+git clone <repository-url>
+
+Downloads an existing GitHub repository
+
+Begin working on an existing project
+
+git status
+
+Shows changed, staged, and untracked files
+
+Check your work before committing
+
+git add .
+
+Stages all changed files
+
+Prepare changes for a commit
+
+git add <filename>
+
+Stages one specific file
+
+Commit only selected files
+
+git commit -m "message"
+
+Saves a snapshot with a description
+
+Record your work
+
+git push
+
+Uploads commits to GitHub
+
+Share your work with the team
+
+git pull
+
+Downloads and merges the latest changes
+
+Stay up to date before coding
+
+git fetch
+
+Downloads changes without merging
+
+Review updates first
+
+git branch
+
+Lists or creates branches
+
+View or organize branches
+
+git branch <branch-name>
+
+Creates a new branch
+
+Start a new feature
+
+git checkout <branch-name>
+
+Switches branches
+
+Move to another branch
+
+git switch <branch-name>
+
+Modern way to switch branches 
+Recommended over checkout
+
+git switch -c <branch-name>
+
+Creates and switches to a new branch
+
+Begin new work
+
+git merge <branch-name>
+
+Combines branches
+
+Merge completed features
+
+git rebase <branch-name>
+
+Replays commits on another branch
+
+Keep history cleaner
+
+git log
+
+Displays commit history
+
+Review project history
+
+git diff
+
+Shows code differences
+
+Inspect changes before committing
+
+git stash
+
+Temporarily saves unfinished work
+
+Switch tasks without committing
+
+git stash pop
+
+Restores stashed work
+
+Continue where you left off
+
+git restore <file>
+
+Discards changes in a file
+
+Undo mistakes
+
+git rm <file>
+
+Removes a file from Git
+
+Delete tracked files
+
+git mv old new
+
+Renames or moves a file
+
+Keep Git history when renaming
+
+git remote -v
+
+Lists remote repositories
+
+Verify GitHub connection
+
+git remote add origin <url>
+
+Connects a local repository to GitHub
+
+First-time setup
+
+git tag v1.0.0
+
+Creates a version tag
+
+Mark software releases
+
+git reset --soft HEAD~1
+
+Undoes the last commit but keeps changes
+
+Fix a recent commit
+
+git reset --hard HEAD
+
+Discards all uncommitted changes
+
+Start over (use carefully)
