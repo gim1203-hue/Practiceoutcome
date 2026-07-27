@@ -99,3 +99,8 @@
 7- git reset file name (to reset only 1 file)
 
 --------how to revert commit------
+1- add commit push to git hub
+2- selet commit copy hash 
+3- git revert (past hash) on vscode
+4- open new window make commit then
+5- git push to git hub.
