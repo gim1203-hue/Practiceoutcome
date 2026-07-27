@@ -89,3 +89,11 @@
 5- git stash save again
 6- git stash apply
 
+----------withraw staged changes----
+1- git status
+2- git add .  (staged)green
+3- git status
+4- git reset. (unstaged)red
+5- git status
+6- git add .  (staged)green
+7- git reset file name (to reset only 1 file)
