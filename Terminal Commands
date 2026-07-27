@@ -62,7 +62,18 @@
         git add .
         git commit -m "update file name"
         git push
+    
+    -------branch status--------
         git status
+    
     -----check history----
     1- git log 
-sample pull request  
+ 
+ ----creating  pull request----
+ 1- open secondary branch add content
+ 2- push to git hub and open github 
+ 3- create a pull request from secondary to main branch
+ on git hub to review changes
+ and viewer input. verify change.
+ 4- confim and merge
+ 5- open vscode pull changes for github.
