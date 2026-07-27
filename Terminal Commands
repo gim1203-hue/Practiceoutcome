@@ -80,3 +80,7 @@
 
 --------compare brances to see the difference--------
 1- git diff branch1..branch2
+
+--------how to perform stash-------
+1- git stash save "added paragraph"
+2- git stash save "content in file name"
