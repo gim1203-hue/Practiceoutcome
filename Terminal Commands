@@ -77,3 +77,6 @@
  and viewer input. verify change.
  4- confim and merge
  5- open vscode pull changes for github.
+
+--------compare brances to see the difference--------
+1- git diff branch1..branch2
