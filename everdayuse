@@ -45,4 +45,5 @@ VS Code-specific tips
 	•	Source Control panel (Ctrl+Shift+G / Cmd+Shift+G) does staging, committing, and pushing without touching the terminal
 	•	The GitLens extension is worth installing — adds blame annotations, history, and comparisons right in the editor
 	•	VS Code shows inline diff gutters (green/red bars) for uncommitted changes automatically
+	----------------------------------------------------------------------------------
 
