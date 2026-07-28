@@ -104,3 +104,9 @@
 3- git revert (past hash) on vscode
 4- open new window make commit then
 5- git push to git hub.
+
+--------------tagging-----------------------
+1- git tag -a <tag-name> -m "tagging message" <commit_hash>
+2- git tag (for name)
+3- git tag -n (for message of tag)
+4- git push origin <tag name>
