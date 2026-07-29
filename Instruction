@@ -16,3 +16,4 @@ perform/list/save/apply stash
 withdraw staged chages
 revert commit
 tagging
+creating new branch on terminal
