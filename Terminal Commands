@@ -110,3 +110,10 @@
 2- git tag (for name)
 3- git tag -n (for message of tag)
 4- git push origin <tag name>
+----------------------------------------------
+
+-----------create branch on vscode-------------
+1- git checkout -b newbranchname
+2- git add .
+3- git commit -m "branchname"
+4- git push -u origin new branch name
