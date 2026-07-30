@@ -117,3 +117,7 @@
 2- git add .
 3- git commit -m "branchname"
 4- git push -u origin new branch name
+------------------------------------
+
+---------resetting a file------------
+1- git reset file.txt
