@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head></head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imrans first website</title>
-</head>
-<body>
-<h1>hello world</h1>
-  ------------------------------------------------
-
-  <form action="https://www.google.com/search" method="get">
-    <input type="text" name="q" placeholder="Search Google..." required>
-    <button type="submit">Search</button>
-  </form>
-  ------------------------------------------------------------------------
-
-  ---------------------------------------------------------------------
-  <div class="tabs">
-    <a href="https://www.yahoo.com/" class="tab" target="_blank">Yahoo</a>
-    <a href="https://www.google.com/" class="tab" target="_blank">Google</a>
-  </div>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>imrans first website</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
     .tabs {
       display: flex;
       border-bottom: 2px solid #ccc;
       max-width: 300px;
-      margin-top: 10px;
+      margin: 15px 0;
     }
     .tab {
       padding: 10px 20px;
@@ -38,27 +27,64 @@
       border-bottom: none;
       border-radius: 8px 8px 0 0;
       margin-right: 4px;
-      font-family: Arial, sans-serif;
     }
     .tab:hover {
       background: #e0e0e0;
     }
+    pre, code {
+      background: #f4f4f4;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: "Courier New", monospace;
+    }
+    pre {
+      display: block;
+      white-space: pre-wrap;
+    }
+    code {
+      padding: 2px 6px;
+    }
+    h3 {
+      margin-top: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 30px 0;
+    }
   </style>
+</head>
+<body>
 
------------------------------------------------------------------------
-    <h3>covered material</h3>
-<pre>creating new branches
+  <h1>hello world</h1>
+
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" name="q" placeholder="Search Google..." required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="tabs">
+    <a href="https://www.yahoo.com/" class="tab" target="_blank">Yahoo</a>
+    <a href="https://www.google.com/" class="tab" target="_blank">Google</a>
+  </div>
+
+  <hr>
+
+  <h3>Covered Material</h3>
+  <pre>creating new branches
 fetching
 pulling
-pushing 
+pushing
 merging
 rebasing
 branching
 switching between branches
 status
-updating 
+updating
 history
-pull request= PR
+pull request = PR
 compare between branches
 perform/list/save/apply stash
 withdraw staged changes
@@ -67,224 +93,231 @@ tagging
 creating new branch on terminal
 reset a file
 to go live index.html
-Add a like to web site
-</pre>
-    <hr>
-<h3>Steps to create a new repository and link it to local project</h3>
-<h3>Terminal commands for VSCode for adding new repository</h3>
-<ol>
-<li>After creating a new folder and a file in (index.html)</li>
-<li>Press (shift+1 enter). make sure to save file in vscodes.</li>
-<li>then go to github and create a new repository and</li>
-<li>copy the url of the repository and paste it in the second command in the terminal of vscode.</li>
-<li>git init</li>
-<li>git remote add origin <copy paste url from github></li>
-<li>git add .</li>
-<li>git commit -m "initial commit"</li>
-<li>git push -u origin master</li>
-</ol>
--------(to update latest changes)-------
-<ol>
-<li>git add .</li>
-<li>git commit -m "update my html file"</li>
-<li>git push</li>
-</ol>
-----------------------------------------------------------
+add a link to website</pre>
 
-<h3>To clone resository from GitHub to local machine</h3>
-<ol>
-<li>copy url from github (control+c)</li>
-<li>open new window in vscodes</li>
-<li>press (control+shift+p)</li>
-<li>write (Git: Clone)</li>
-<li>paste url (control+v) press enter</li>
-<li>select folder where you want to save the project</li>
-</ol>
-<p>OR</p>
-<ol>
-<li>copy url of repository from github (control+c)</li>
-<li>open a new folder in VScode</li>
-<li>type git clone then press (control+v) to paste url in the terminal.</li>
-</ol>
+  <hr>
 
-<h3>--------Create Branch on VSCode----------</h3>
-<ol>
-<li>git checkout -b newbranchname</li>
-<li>git add .</li>
-<li>git commit -m "branchname"</li>
-<li>git push -u origin new branch name</li>
-</ol>
+  <h3>Steps to Create a New Repository and Link It to Local Project</h3>
+  <ol>
+    <li>After creating a new folder and a file (index.html)</li>
+    <li>Press shift+1, enter — make sure to save the file in VS Code</li>
+    <li>Go to GitHub and create a new repository</li>
+    <li>Copy the repository URL and paste it into the second command below</li>
+    <li><code>git init</code></li>
+    <li><code>git remote add origin &lt;copy paste url from github&gt;</code></li>
+    <li><code>git add .</code></li>
+    <li><code>git commit -m "initial commit"</code></li>
+    <li><code>git push -u origin master</code></li>
+  </ol>
 
-<h3>--------Delete a Branch in Terminal----------</h3>
-<p>Note: you can't delete the branch you are currently on.</p>
-<ol>
-<li>git branch -d branchname</li>
-</ol>
- 
-<h3>------creating and moving branches in git------</h3>
-<p>(type command clear in terminal to clear the terminal)</p>
-<ol>
-<li>git branch <branch-name></li>
-<li>git checkout <branch-name></li>
-<li>git push origin (name of branch)</li>
-<li>git add .</li>
-<li>git commit -m "add (file name)"</li>
-<li>git push -u origin (file name)</li>
-</ol>
+  <h3>Update Latest Changes</h3>
+  <ol>
+    <li><code>git add .</code></li>
+    <li><code>git commit -m "update my html file"</code></li>
+    <li><code>git push</code></li>
+  </ol>
 
-<h3>------------Merge branches to the maste---------r</h3>
-<ol>
-<li>git branch (to see which branch is active)</li>
-<li>git checkout branch name (to select which branch to merge to)</li>
-<li>git merge branch name (which branch you want merged)</li>
-<li>git push</li>
-</ol>
+  <hr>
 
-<h3>------------To merge branch using rebase------------</h3>
-<ol>
-<li>git branch (to see which branch is active)</li>
-<li>git checkout branch name (to select which branch to merge to)</li>
-<li>git rebase branch name (which branch you want merged)</li>
-<li>git push</li>
-</ol>
+  <h3>Clone a Repository from GitHub to Local Machine</h3>
+  <ol>
+    <li>Copy URL from GitHub (control+c)</li>
+    <li>Open new window in VS Code</li>
+    <li>Press control+shift+p</li>
+    <li>Type "Git: Clone"</li>
+    <li>Paste URL (control+v), press enter</li>
+    <li>Select folder where you want to save the project</li>
+  </ol>
+  <p>OR</p>
+  <ol>
+    <li>Copy URL of repository from GitHub (control+c)</li>
+    <li>Open a new folder in VS Code</li>
+    <li>Type <code>git clone</code> then press control+v to paste URL in the terminal</li>
+  </ol>
 
-<h3>-------(to delete a branch)-------</h3>
-<ol>
-<li>git branch -d <branch-name> (to delete a branch locally)</li>
-<li>git push origin --delete <branch-name> (to delete a branch from github)</li>
-<li>git push origin <branch-name> (to push the branch to github)</li>
-<li>git checkout -b <branch-name> (to create and move to new branch)</li>
-<li>git merge <branch-name> (to merge the branch to main branch)</li>
-</ol>
+  <hr>
 
-<h3>-------Compare Branches to See the Difference----------</h3>
-<ol>
-<li>git diff branch1..branch2</li>
-</ol>
+  <h3>Create Branch on VS Code</h3>
+  <ol>
+    <li><code>git checkout -b newbranchname</code></li>
+    <li><code>git add .</code></li>
+    <li><code>git commit -m "branchname"</code></li>
+    <li><code>git push -u origin newbranchname</code></li>
+  </ol>
 
-<h3> ----(Git fetch)---------------------</h3>
-<ol>
-<li>*after creating a file and new branch in git hub*</li>
-<li>*open visual studio code*</li>
-<li>git fetch origin (to fetch data from github)</li>
-</ol>
-----------------------------------------------------
+  <h3>Delete a Branch in Terminal</h3>
+  <p>Note: you can't delete the branch you are currently on.</p>
+  <ol>
+    <li><code>git branch -d branchname</code></li>
+  </ol>
 
-<h3>------------(Git pull)------------</h3>
-<ol>
-<li>* combination of fetch and merging*</li>
-<li>git pull origin master (to pull from github)</li>
-<li>git checkout branch name </li>
-<li>git merge branch name main/master</li>
-<li>git push</li>
-</ol>
-        
-<h3>-----------Git Push------------</h3>
-<ol>
-<li>git push origin <branch-name> (to push the branch to github)</li>
-</ol>
--------------------------------------------------------------
+  <hr>
 
-<h3>-----------------To update latest changes----------</h3>
-<ol>
-<li>git add .</li>
-<li>git commit -m "update my html file"</li>
-<li>git push</li>
+  <h3>Creating and Moving Branches in Git</h3>
+  <p>(type command <code>clear</code> in terminal to clear the terminal)</p>
+  <ol>
+    <li><code>git branch &lt;branch-name&gt;</code></li>
+    <li><code>git checkout &lt;branch-name&gt;</code></li>
+    <li><code>git push origin &lt;branch-name&gt;</code></li>
+    <li><code>git add .</code></li>
+    <li><code>git commit -m "add &lt;file name&gt;"</code></li>
+    <li><code>git push -u origin &lt;file name&gt;</code></li>
+  </ol>
+
+  <h3>Merge Branches to the Master</h3>
+  <ol>
+    <li><code>git branch</code> (to see which branch is active)</li>
+    <li><code>git checkout branchname</code> (to select which branch to merge to)</li>
+    <li><code>git merge branchname</code> (which branch you want merged)</li>
+    <li><code>git push</code></li>
+  </ol>
+
+  <h3>To Merge Branch Using Rebase</h3>
+  <ol>
+    <li><code>git branch</code> (to see which branch is active)</li>
+    <li><code>git checkout branchname</code> (to select which branch to merge to)</li>
+    <li><code>git rebase branchname</code> (which branch you want merged)</li>
+    <li><code>git push</code></li>
+  </ol>
+
+  <h3>To Delete a Branch</h3>
+  <ol>
+    <li><code>git branch -d &lt;branch-name&gt;</code> (to delete a branch locally)</li>
+    <li><code>git push origin --delete &lt;branch-name&gt;</code> (to delete a branch from GitHub)</li>
+    <li><code>git push origin &lt;branch-name&gt;</code> (to push the branch to GitHub)</li>
+    <li><code>git checkout -b &lt;branch-name&gt;</code> (to create and move to new branch)</li>
+    <li><code>git merge &lt;branch-name&gt;</code> (to merge the branch to main branch)</li>
+  </ol>
+
+  <h3>Compare Branches to See the Difference</h3>
+  <ol>
+    <li><code>git diff branch1..branch2</code></li>
+  </ol>
+
+  <hr>
+
+  <h3>Git Fetch</h3>
+  <ol>
+    <li>After creating a file and new branch in GitHub</li>
+    <li>Open Visual Studio Code</li>
+    <li><code>git fetch origin</code> (to fetch data from GitHub)</li>
+  </ol>
+
+  <h3>Git Pull</h3>
+  <p>(combination of fetch and merging)</p>
+  <ol>
+    <li><code>git pull origin master</code> (to pull from GitHub)</li>
+    <li><code>git checkout branchname</code></li>
+    <li><code>git merge branchname</code> (main/master)</li>
+    <li><code>git push</code></li>
+  </ol>
+
+  <h3>Git Push</h3>
+  <ol>
+    <li><code>git push origin &lt;branch-name&gt;</code> (to push the branch to GitHub)</li>
+  </ol>
+
+  <h3>To Update Latest Changes</h3>
+  <ol>
+    <li><code>git add .</code></li>
+    <li><code>git commit -m "update my html file"</code></li>
+    <li><code>git push</code></li>
+  </ol>
+
+  <pre>git fetch origin
+git pull
+git checkout branch name
+git merge branch name or git rebase branch name
+git add .
+git commit -m "update file name"
+git push</pre>
+
+  <hr>
+
+  <h3>Branch Status</h3>
+  <ol>
+    <li><code>git status</code></li>
+  </ol>
+
+  <h3>Check History</h3>
+  <ol>
+    <li><code>git log</code></li>
+  </ol>
+
+  <hr>
+
+  <h3>Creating a Pull Request</h3>
+  <ol>
+    <li>Open secondary branch, add content</li>
+    <li>Push to GitHub and open GitHub</li>
+    <li>Create a pull request from secondary to main branch on GitHub to review changes and get viewer input, verify changes</li>
+    <li>Confirm and merge</li>
+    <li>Open VS Code, pull changes from GitHub</li>
+  </ol>
+
+  <h3>How to Perform Stash and List/Save and Apply Stash</h3>
+  <ol>
+    <li><code>git stash save "added paragraph"</code></li>
+    <li><code>git stash save "content in file name"</code></li>
+    <li><code>git stash list</code></li>
+    <li><code>git stash apply</code></li>
+    <li><code>git stash save</code> again</li>
+    <li><code>git stash apply</code></li>
+  </ol>
+
+  <h3>Withdraw Staged Changes</h3>
+  <ol>
+    <li><code>git status</code></li>
+    <li><code>git add .</code> (staged, green)</li>
+    <li><code>git status</code></li>
+    <li><code>git reset</code> (unstaged, red)</li>
+    <li><code>git status</code></li>
+    <li><code>git add .</code> (staged, green)</li>
+    <li><code>git reset filename</code> (to reset only 1 file)</li>
+  </ol>
+
+  <h3>How to Revert Commit</h3>
+  <ol>
+    <li>Add, commit, push to GitHub</li>
+    <li>Select commit, copy hash</li>
+    <li><code>git revert &lt;paste hash&gt;</code> on VS Code</li>
+    <li>Open new window, make commit</li>
+    <li>Push to GitHub</li>
+  </ol>
+
+  <h3>Tagging</h3>
+  <ol>
+    <li><code>git tag -a &lt;tag-name&gt; -m "tagging message" &lt;commit_hash&gt;</code></li>
+    <li><code>git tag</code> (for name)</li>
+    <li><code>git tag -n</code> (for message of tag)</li>
+    <li><code>git push origin &lt;tag name&gt;</code></li>
+  </ol>
+
+  <h3>Resetting a File</h3>
+  <ol>
+    <li><code>git reset file.txt</code></li>
+  </ol>
+
+  <h3>Go Live</h3>
+  <ol>
+    <li>Open your HTML file</li>
+    <li>Right click</li>
+    <li>Open with Live Server</li>
+  </ol>
+
+  <hr>
+
+  <h3>Add a Link to Website</h3>
+  <ol>
+    <li><a href="https://www.example.com">Example Website</a></li>
+    <li><code>git add index.html</code></li>
+    <li><code>git commit -m "add link"</code></li>
+    <li><code>git push origin master</code></li>
+    <li>or for the whole file</li>
+    <li><code>git add index.html</code></li>
+    <li><code>git commit -m "Clean up HTML structure and formatting"</code></li>
+    <li><code>git push origin master</code></li>
 </ol>
---------------------------------------------------------------       
-<pre>
-        git fetch origin
-        git pull
-        git checkout branch name
-        git merge branch name or git rebase branch name
-        git add .
-        git commit -m "update file name"
-        git push
- </pre>
-
-<h3>Branch Status</h3>
-<ol>
-<li>git status</li>
-</ol>
-    
-    
-<h3>Check History</h3>
-<ol>
-<li>git log</li>
-</ol>
- 
- 
-<h3>-------Creating Pull Request----------</h3>
-<ol>
-<li>open secondary branch add content</li>
-<li>push to git hub and open github</li>
-<li>create a pull request from secondary to main branch on git hub to review changes and viewer input. verify change.</li>
-<li>confirm and merge</li>
-<li>open vscode pull changes for github.</li>
-</ol>
-
-
-<h3>------How to Perform Stash and List/Save and Apply Stash---</h3>
-<ol>
-<li>git stash save "added paragraph"</li>
-<li>git stash save "content in file name"</li>
-<li>git stash list</li>
-<li>git stash apply</li>
-<li>git stash save again</li>
-<li>git stash apply</li>
-</ol>
-
-<h3>--------Withdraw Staged Changes----------</h3>
-<ol>
-<li>git status</li>
-<li>git add .  (staged)green</li>
-<li>git status</li>
-<li>git reset. (unstaged)red</li>
-<li>git status</li>
-<li>git add .  (staged)green</li>
-<li>git reset file name (to reset only 1 file)</li>
-</ol>
-
-<h3>--------How to Revert Commit----------</h3>
-<ol>
-<li>add commit push to git hub</li>
-<li>select commit copy hash</li>
-<li>git revert (past hash) on vscode</li>
-<li>open new window make commit then</li>
-<li>git push to git hub.</li>
-</ol>
-
-<h3>--------Tagging----------</h3>
-<ol>
-<li>git tag -a &lt;tag-name&gt; -m "tagging message" &lt;commit_hash&gt;</li>
-<li>git tag (for name)</li>
-<li>git tag -n (for message of tag)</li>
-<li>git push origin &lt;tag name&gt;</li>
-</ol>
-
-
-
-<h3>--------Resetting a File----------</h3>
-<ol>
-<li>git reset file.txt</li>
-</ol>
-
-<h3>--------Go Live----------</h3>
-<ol>
-<li>open your html file</li>
-<li>right click</li>
-<li>open with five server</li>
-</ol>
----------------------------------
-
-<h3>----add a link to web site----</h3>
-<ol>
-<li><a href="https://www.example.com">Example Website</a></li>
-<li>git add index.html</li>
-<li>git commit -m "add link"</li>
-<li>git push origin master</li>
-</ol>
-
 
 </body>
 </html>
