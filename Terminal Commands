@@ -119,6 +119,10 @@
 4- git push -u origin new branch name
 ------------------------------------
 
+---------Delete a branch in terminal------
+note: you cant delete the branch ur currently on .
+1- git branch -d branchname
+
 ---------resetting a file------------
 1- git reset file.txt
 
