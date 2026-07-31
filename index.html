@@ -36,48 +36,60 @@
 </ol>
 
 <h3>Terminal commands for VSCode</h3>
-<pre>
-1- git init
-2- git remote add origin <copy paste url from github>
-3- git add .
-4- git commit -m "initial commit"
-5- git push -u origin master
+<ol>
+<li>git init</li>
+<li>git remote add origin <copy paste url from github></li>
+<li>git add .</li>
+<li>git commit -m "initial commit"</li>
+<li>git push -u origin master</li>
+</ol>
 -------(to update latest changes)-------
-1- git add .
-2- git commit -m "update my html file"
-3- git push
-</pre>
+<ol>
+<li>git add .</li>
+<li>git commit -m "update my html file"</li>
+<li>git push</li>
+</ol>
 
 <h3> ----(Git fetch)---------------------</h3>
-*after creating a file and new branch in git hub*
-*open viisual sdudio code*
-1- git fetch origin (to fech data from github)
+<ol>
+<li>*after creating a file and new branch in git hub*</li>
+<li>*open visual studio code*</li>
+<li>git fetch origin (to fetch data from github)</li>
+</ol>
 ----------------------------------------------------
 
 <h3>------------(Git pull)------------</h3>
-* combination of fetch and merging*
-1- git pull origin master (to pull from github)
-2- git checkout branch name 
-3- git merge branch name main/master
-4- git push
+<ol>
+<li>* combination of fetch and merging*</li>
+<li>git pull origin master (to pull from github)</li>
+<li>git checkout branch name </li>
+<li>git merge branch name main/master</li>
+<li>git push</li>
+</ol>
         
------(Git Push)-------------------
-1- git push origin <branch-name> (to push the branch to github)
+<h3>Git Push</h3>
+<ol>
+<li>git push origin <branch-name> (to push the branch to github)</li>
+</ol>
 -------------------------------------------------------------
 
- -----( (mergeing) branches to the master -----------)
-1- git branch (to see which brach is active)
-2- git checkout branch name (to select which brach to merge to)
-3- git merge branch name (which branch you want merged)
-4- git push 
+<h3>Merge branches to the master</h3>
+<ol>
+<li>git branch (to see which branch is active)</li>
+<li>git checkout branch name (to select which branch to merge to)</li>
+<li>git merge branch name (which branch you want merged)</li>
+<li>git push</li>
+</ol>
 --------------------------------------------------------------
 
--------(to update latest changes)-------
-1- git add .
-2- git commit -m "update my html file"
-3- git push
+<h3>To update latest changes</h3>
+<ol>
+<li>git add .</li>
+<li>git commit -m "update my html file"</li>
+<li>git push</li>
+</ol>
 --------------------------------------------------------------       
-
+<pre>
         git fetch origin
         git pull
         git checkout branch name
@@ -85,77 +97,97 @@
         git add .
         git commit -m "update file name"
         git push
-        
-------------branch status--------
-       1-  git status
+ </pre>
+
+<h3>Branch Status</h3>
+<ol>
+<li>git status</li>
+</ol>
     
     
-----------------check history----
-       1- git log 
+<h3>Check History</h3>
+<ol>
+<li>git log</li>
+</ol>
  
  
-----------creating  pull request----
- 1- open secondary branch add content
- 2- push to git hub and open github 
- 3- create a pull request from secondary to main branch
- on git hub to review changes
- and viewer input. verify change.
- 4- confim and merge
- 5- open vscode pull changes for github.
+<h3>Creating Pull Request</h3>
+<ol>
+<li>open secondary branch add content</li>
+<li>push to git hub and open github</li>
+<li>create a pull request from secondary to main branch on git hub to review changes and viewer input. verify change.</li>
+<li>confirm and merge</li>
+<li>open vscode pull changes for github.</li>
+</ol>
 
---------compare brances to see the difference--------
-1- git diff branch1..branch2
+<h3>Compare Branches to See the Difference</h3>
+<ol>
+<li>git diff branch1..branch2</li>
+</ol>
 
---------how to perform stash and list/save and apply stash------
-1- git stash save "added paragraph"
-2- git stash save "content in file name"
-3- git stash list
-4- git stash apply
-5- git stash save again
-6- git stash apply
+<h3>How to Perform Stash and List/Save and Apply Stash</h3>
+<ol>
+<li>git stash save "added paragraph"</li>
+<li>git stash save "content in file name"</li>
+<li>git stash list</li>
+<li>git stash apply</li>
+<li>git stash save again</li>
+<li>git stash apply</li>
+</ol>
 
-----------withraw staged changes----
-1- git status
-2- git add .  (staged)green
-3- git status
-4- git reset. (unstaged)red
-5- git status
-6- git add .  (staged)green
-7- git reset file name (to reset only 1 file)
+<h3>Withdraw Staged Changes</h3>
+<ol>
+<li>git status</li>
+<li>git add .  (staged)green</li>
+<li>git status</li>
+<li>git reset. (unstaged)red</li>
+<li>git status</li>
+<li>git add .  (staged)green</li>
+<li>git reset file name (to reset only 1 file)</li>
+</ol>
 
---------how to revert commit------
-1- add commit push to git hub
-2- selet commit copy hash 
-3- git revert (past hash) on vscode
-4- open new window make commit then
-5- git push to git hub.
+<h3>How to Revert Commit</h3>
+<ol>
+<li>add commit push to git hub</li>
+<li>select commit copy hash</li>
+<li>git revert (past hash) on vscode</li>
+<li>open new window make commit then</li>
+<li>git push to git hub.</li>
+</ol>
 
---------------tagging-----------------------
-1- git tag -a <tag-name> -m "tagging message" <commit_hash>
-2- git tag (for name)
-3- git tag -n (for message of tag)
-4- git push origin <tag name>
-----------------------------------------------
+<h3>Tagging</h3>
+<ol>
+<li>git tag -a &lt;tag-name&gt; -m "tagging message" &lt;commit_hash&gt;</li>
+<li>git tag (for name)</li>
+<li>git tag -n (for message of tag)</li>
+<li>git push origin &lt;tag name&gt;</li>
+</ol>
 
------------create branch on vscode-------------
-1- git checkout -b newbranchname
-2- git add .
-3- git commit -m "branchname"
-4- git push -u origin new branch name
-------------------------------------
+<h3>Create Branch on VSCode</h3>
+<ol>
+<li>git checkout -b newbranchname</li>
+<li>git add .</li>
+<li>git commit -m "branchname"</li>
+<li>git push -u origin new branch name</li>
+</ol>
 
----------Delete a branch in terminal------
-note: you cant delete the branch ur currently on .
-1- git branch -d branchname
+<h3>Delete a Branch in Terminal</h3>
+<p>Note: you can't delete the branch you are currently on.</p>
+<ol>
+<li>git branch -d branchname</li>
+</ol>
 
----------resetting a file------------
-1- git reset file.txt
+<h3>Resetting a File</h3>
+<ol>
+<li>git reset file.txt</li>
+</ol>
 
-------------got go live----------
-1- open ur html file 
-2- rite click 
-3- open with five server
----------------------------------<
+<h3>Go Live</h3>
+<ol>
+<li>open your html file</li>
+<li>right click</li>
+<li>open with five server</li>
+</ol>
 
 </body>
 </html>
