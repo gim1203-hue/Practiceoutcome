@@ -8,7 +8,139 @@
 <body>
      
     <h1> hello world</h1>
-    <
+    ------------------------------------------------
+    *----------(steps to create a new repository and link it to local project)--------
+1- After creating a new folder and a file in (index.html)
+2- Press (shift+1 enter). make sure to save file in vscodes.
+3- then go to github and create a new repository and
+4- copy the url of the repository and paste it in the second command in the terminal of vscode.
+----------------------------------------------------------
+        *----------( to clone code from github to local machine)--------
+ 1- copy url from github (contyro+c)
+ 2- open new window in vscodes
+ 3- press (control+shift+p)
+ 4- write (Git: Clone)
+5- paste url (contro+v) press enter
+6- select folder where you want to save the projest
+                    OR
+1- copy url of repository from github (control+c)
+2- open a new folder in VScode
+3- type git clone then press (contro+v) to paste url in the terminal.
+    
+    *=============(terminal command for vscode)
+    1- git init
+    2- git remote add origin <copy paste url from github>
+        3- git add .
+        4- git commit -m "initial commit"
+        5- git push -u origin master
+        -------(to update latest changes)-------
+        1- git add .
+        2- git commit -m "update my html file"
+        3- git push
+
+         ----(Git fetch)---------------------
+        *after creating a file and new branch in git hub*
+        *open viisual sdudio code*
+        1- git fetch origin (to fech data from github)
+        ----------------------------------------------------
+
+        ------------(Git pull)------------
+        * combination of fetch and merging*
+        1- git pull origin master (to pull from github)
+        2- git checkout branch name 
+        3- git merge branch name main/master
+        4- git push
+        
+        ------------(Git Push)-------------------
+        1- git push origin <branch-name> (to push the branch to github)
+
+        -----( (mergeing) branches to the master -----------)
+        1- git branch (to see which brach is active)
+        2- git checkout branch name (to select which brach to merge to)
+        3- git merege branch name (which branch you want merged)
+        4- git push 
+        
+        -------(to update latest changes)-------
+        1- git add .
+        2- git commit -m "update my html file"
+        3- git push
+
+        git fetch origin
+        git pull
+        git checkout branch name
+        git merge branch name or git rebase branch name
+        git add .
+        git commit -m "update file name"
+        git push
+    
+    -------branch status--------
+        git status
+    
+    -----check history----
+    1- git log 
+ 
+ ----creating  pull request----
+ 1- open secondary branch add content
+ 2- push to git hub and open github 
+ 3- create a pull request from secondary to main branch
+ on git hub to review changes
+ and viewer input. verify change.
+ 4- confim and merge
+ 5- open vscode pull changes for github.
+
+--------compare brances to see the difference--------
+1- git diff branch1..branch2
+
+--------how to perform stash and list/save and apply stash------
+1- git stash save "added paragraph"
+2- git stash save "content in file name"
+3- git stash list
+4- git stash apply
+5- git stash save again
+6- git stash apply
+
+----------withraw staged changes----
+1- git status
+2- git add .  (staged)green
+3- git status
+4- git reset. (unstaged)red
+5- git status
+6- git add .  (staged)green
+7- git reset file name (to reset only 1 file)
+
+--------how to revert commit------
+1- add commit push to git hub
+2- selet commit copy hash 
+3- git revert (past hash) on vscode
+4- open new window make commit then
+5- git push to git hub.
+
+--------------tagging-----------------------
+1- git tag -a <tag-name> -m "tagging message" <commit_hash>
+2- git tag (for name)
+3- git tag -n (for message of tag)
+4- git push origin <tag name>
+----------------------------------------------
+
+-----------create branch on vscode-------------
+1- git checkout -b newbranchname
+2- git add .
+3- git commit -m "branchname"
+4- git push -u origin new branch name
+------------------------------------
+
+---------Delete a branch in terminal------
+note: you cant delete the branch ur currently on .
+1- git branch -d branchname
+
+---------resetting a file------------
+1- git reset file.txt
+
+------------got go live----------
+1- open ur html file 
+2- rite click 
+3- open with five server
+---------------------------------<
 
 </body>
 </html>
