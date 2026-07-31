@@ -32,14 +32,40 @@ creating new branch on terminal
 reset a file
 to go live index.html</pre>
     <hr>
-    <h3>Steps to create a new repository and link it to local project</h3>
+<h3>Steps to create a new repository and link it to local project</h3>
+<h3>Terminal commands for VSCode for adding new repository</h3>
 <ol>
 <li>After creating a new folder and a file in (index.html)</li>
 <li>Press (shift+1 enter). make sure to save file in vscodes.</li>
 <li>then go to github and create a new repository and</li>
 <li>copy the url of the repository and paste it in the second command in the terminal of vscode.</li>
+<li>git init</li>
+<li>git remote add origin <copy paste url from github></li>
+<li>git add .</li>
+<li>git commit -m "initial commit"</li>
+<li>git push -u origin master</li>
+</ol>
+-------(to update latest changes)-------
+<ol>
+<li>git add .</li>
+<li>git commit -m "update my html file"</li>
+<li>git push</li>
 </ol>
 ----------------------------------------------------------
+
+<h3>--------Create Branch on VSCode----------</h3>
+<ol>
+<li>git checkout -b newbranchname</li>
+<li>git add .</li>
+<li>git commit -m "branchname"</li>
+<li>git push -u origin new branch name</li>
+</ol>
+
+<h3>--------Delete a Branch in Terminal----------</h3>
+<p>Note: you can't delete the branch you are currently on.</p>
+<ol>
+<li>git branch -d branchname</li>
+</ol>
  
 <h3>To clone resository from GitHub to local machine</h3>
 <ol>
@@ -57,19 +83,45 @@ to go live index.html</pre>
 <li>type git clone then press (control+v) to paste url in the terminal.</li>
 </ol>
 
-<h3>Terminal commands for VSCode for adding new repository</h3>
+<h3>------creating and moving branches in git------</h3>
+<p>(type command clear in terminal to clear the terminal)</p>
 <ol>
-<li>git init</li>
-<li>git remote add origin <copy paste url from github></li>
+<li>git branch <branch-name></li>
+<li>git checkout <branch-name></li>
+<li>git push origin (name of branch)</li>
 <li>git add .</li>
-<li>git commit -m "initial commit"</li>
-<li>git push -u origin master</li>
+<li>git commit -m "add (file name)"</li>
+<li>git push -u origin (file name)</li>
 </ol>
--------(to update latest changes)-------
+
+<h3>------------Merge branches to the maste---------r</h3>
 <ol>
-<li>git add .</li>
-<li>git commit -m "update my html file"</li>
+<li>git branch (to see which branch is active)</li>
+<li>git checkout branch name (to select which branch to merge to)</li>
+<li>git merge branch name (which branch you want merged)</li>
 <li>git push</li>
+</ol>
+
+<h3>------------To merge branch using rebase------------</h3>
+<ol>
+<li>git branch (to see which branch is active)</li>
+<li>git checkout branch name (to select which branch to merge to)</li>
+<li>git rebase branch name (which branch you want merged)</li>
+<li>git push</li>
+</ol>
+
+<h3>-------(to delete a branch)-------</h3>
+<ol>
+<li>git branch -d <branch-name> (to delete a branch locally)</li>
+<li>git push origin --delete <branch-name> (to delete a branch from github)</li>
+<li>git push origin <branch-name> (to push the branch to github)</li>
+<li>git checkout -b <branch-name> (to create and move to new branch)</li>
+<li>git merge <branch-name> (to merge the branch to main branch)</li>
+</ol>
+
+<h3>-------Compare Branches to See the Difference----------</h3>
+<ol>
+<li>git diff branch1..branch2</li>
 </ol>
 
 <h3> ----(Git fetch)---------------------</h3>
@@ -89,20 +141,11 @@ to go live index.html</pre>
 <li>git push</li>
 </ol>
         
-<h3>Git Push</h3>
+<h3>-----------Git Push------------</h3>
 <ol>
 <li>git push origin <branch-name> (to push the branch to github)</li>
 </ol>
 -------------------------------------------------------------
-
-<h3>------------Merge branches to the maste---------r</h3>
-<ol>
-<li>git branch (to see which branch is active)</li>
-<li>git checkout branch name (to select which branch to merge to)</li>
-<li>git merge branch name (which branch you want merged)</li>
-<li>git push</li>
-</ol>
---------------------------------------------------------------
 
 <h3>-----------------To update latest changes----------</h3>
 <ol>
@@ -142,10 +185,6 @@ to go live index.html</pre>
 <li>open vscode pull changes for github.</li>
 </ol>
 
-<h3>-------Compare Branches to See the Difference----------</h3>
-<ol>
-<li>git diff branch1..branch2</li>
-</ol>
 
 <h3>------How to Perform Stash and List/Save and Apply Stash---</h3>
 <ol>
@@ -185,19 +224,7 @@ to go live index.html</pre>
 <li>git push origin &lt;tag name&gt;</li>
 </ol>
 
-<h3>--------Create Branch on VSCode----------</h3>
-<ol>
-<li>git checkout -b newbranchname</li>
-<li>git add .</li>
-<li>git commit -m "branchname"</li>
-<li>git push -u origin new branch name</li>
-</ol>
 
-<h3>--------Delete a Branch in Terminal----------</h3>
-<p>Note: you can't delete the branch you are currently on.</p>
-<ol>
-<li>git branch -d branchname</li>
-</ol>
 
 <h3>--------Resetting a File----------</h3>
 <ol>
