@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>imrans first website</title>
+  <title>Imran Khan's first website</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,32 +23,66 @@
       padding: 10px 20px;
       text-decoration: none;
       color: #333;
-      background: #f1f1f1;
+      background: yellow;
       border: 1px solid #ccc;
       border-bottom: none;
       border-radius: 8px 8px 0 0;
       margin-right: 4px;
     }
     .tab:hover {
-      background: #e0e0e0;
+      background: #e6e600;
     }
     pre, code {
       background: #f4f4f4;
-      padding: 8px 12px;
       border-radius: 6px;
       font-family: "Courier New", monospace;
     }
     pre {
       display: block;
       white-space: pre-wrap;
+      color: green;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      font-size: 18px;
     }
     code {
       padding: 2px 6px;
     }
     h3 {
+      color: red;
+      background-color: black;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 12px;
       margin-top: 30px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+      text-align: left;
+    }
+    .course-title {
+      font-size: 32px;
+      font-weight: 900;
+      text-align: left;
+      margin: 10px 0;
+    }
+    .left-block {
+      text-align: left;
+    }
+    .sidebar-left {
+      position: absolute;
+      left: 20px;
+      top: 320px;
+      width: 220px;
+    }
+    .content-right {
+      position: absolute;
+      right: 20px;
+      top: 320px;
+      width: 500px;
+    }
+    ol {
+      color: green;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px 30px;
     }
     hr {
       border: none;
@@ -58,6 +93,10 @@
 </head>
 <body>
 
+  <h1 class="left-block">Imran Khan</h1>
+  <p id="today-date" class="left-block"></p>
+  <p class="course-title">Software Engineering Course</p>
+
   <h1>hello world</h1>
 
   <form action="https://www.google.com/search" method="get">
@@ -66,14 +105,17 @@
   </form>
 
   <div class="tabs">
-    <a href="https://www.yahoo.com/" class="tab" target="_blank">Yahoo</a>
-    <a href="https://www.google.com/" class="tab" target="_blank">Google</a>
+    <a href="https://www.yahoo.com/" class="tab">Yahoo</a>
+    <a href="https://www.google.com/" class="tab">Google</a>
+    <a href="https://www.facebook.com/" class="tab">Facebook</a>
+    <a href="https://www.tiktok.com/" class="tab">TikTok</a>
   </div>
 
   <hr>
 
-  <h3>Covered Material</h3>
-  <pre>creating new branches
+  <div class="sidebar-left">
+  <h3 class="left-block">Covered Material</h3>
+  <pre class="left-block">creating new branches
 fetching
 pulling
 pushing
@@ -94,8 +136,9 @@ creating new branch on terminal
 reset a file
 to go live index.html
 add a link to website</pre>
+  </div>
 
-  <hr>
+  <div class="content-right">
 
   <h3>Steps to Create a New Repository and Link It to Local Project</h3>
   <ol>
@@ -317,7 +360,15 @@ git push</pre>
     <li><code>git add index.html</code></li>
     <li><code>git commit -m "Clean up HTML structure and formatting"</code></li>
     <li><code>git push origin master</code></li>
-</ol>
+  </ol>
+
+  </div>
+
+  <script>
+    document.getElementById('today-date').textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+  </script>
 
 </body>
 </html>
