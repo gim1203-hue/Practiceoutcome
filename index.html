@@ -89,6 +89,12 @@
       border-top: 1px solid #ddd;
       margin: 30px 0;
     }
+    .hero-image {
+      max-width: 280px;
+      display: block;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -98,6 +104,48 @@
   <p class="course-title">Software Engineering Course</p>
 
   <h1>hello world</h1>
+
+  <img class="hero-image" src="https://cdn.pixabay.com/photo/2020/11/29/08/07/cute-5786818_640.jpg" alt="Cute cartoon illustration of a girl and a boy">
+
+  <svg class="hero-image" width="240" height="160" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flag of Pakistan">
+    <rect width="900" height="600" fill="#01411C"/>
+    <rect width="225" height="600" fill="#ffffff"/>
+    <g transform="translate(562,300)">
+      <circle r="130" fill="#ffffff"/>
+      <circle r="130" fill="#01411C" transform="translate(35,-20)"/>
+      <g fill="#ffffff" transform="translate(150,-70) rotate(-20)">
+        <polygon points="0,-45 13,-14 45,-14 19,5 29,36 0,17 -29,36 -19,5 -45,-14 -13,-14"/>
+      </g>
+    </g>
+  </svg>
+
+  <div style="border:1px solid #ccc; border-radius:8px; padding:15px 20px; max-width:500px; margin:15px 0; background:#f9f9f9;">
+    <h3 style="margin-top:0;">Qaumi Taranah — National Anthem of Pakistan</h3>
+    <p style="font-style:italic; color:#01411C; line-height:1.9;">
+      پاک سرزمین شاد باد<br>
+      کشورِ حسین شاد باد<br>
+      تو نشانِ عزمِ عالی شان<br>
+      ارضِ پاکستان<br>
+      مرکزِ یقین شاد باد
+      <br><br>
+      پاک سرزمین کا نظام<br>
+      قوتِ اخوتِ عوام<br>
+      قوم، ملک، سلطنت<br>
+      پائندہ تابندہ باد<br>
+      شاد باد منزلِ مراد
+      <br><br>
+      پرچمِ ستارہ و ہلال<br>
+      رہبرِ ترقی و کمال<br>
+      ترجمانِ ماضی، شانِ حال<br>
+      جانِ استقبال<br>
+      سایۂ خدائے ذوالجلال
+    </p>
+    <p style="font-size:14px; color:#555;">
+      <strong>Transliteration:</strong> Pāk sarzamīn shād bād, kishwar-e-hasīn shād bād, tū nishān-e-azm-e-ālī shān, arz-e-Pākistān, markaz-e-yaqīn shād bād...
+      <br><br>
+      <strong>Meaning:</strong> Blessed be the sacred land, happy be the bounteous realm; you are the symbol of high resolve, land of Pakistan — blessed be the seat of faith. The order of this sacred land is the strength of the brotherhood of the people; may the nation, country, and dominion live forever, shining and eternal. The flag of the crescent and star leads the way to progress and perfection — interpreter of our past, glory of our present, and inspiration for our future.
+    </p>
+  </div>
 
   <form action="https://www.google.com/search" method="get">
     <input type="text" name="q" placeholder="Search Google..." required>
@@ -369,7 +417,6 @@ git push</pre>
       weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
     });
   </script>
-  <img src="img_girl.jpg" width="500" height="600">
-
+  
 </body>
 </html>
